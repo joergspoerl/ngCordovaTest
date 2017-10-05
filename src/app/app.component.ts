@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {MdButtonModule, MdCheckboxModule} from '@angular/material';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   clickButton() {
-    alert("Button clicked");
+    alert('Button clicked');
   }
 }
