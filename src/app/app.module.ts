@@ -6,6 +6,7 @@ import { MatButtonModule } from '@angular/material';
 import { MatCheckboxModule } from '@angular/material';
 import { MatTabsModule } from '@angular/material';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
@@ -39,6 +40,7 @@ import { SettingsComponent } from './pages/settings/settings.component';
    MatButtonModule,
    MatCheckboxModule,
    MatTabsModule,
+   FlexLayoutModule,
    BrowserAnimationsModule
   ],
   exports: [
