@@ -2,8 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule} from '@angular/router';
 
-import {MdButtonModule, MdCheckboxModule, MdTabsModule } from '@angular/material';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MdButtonModule } from '@angular/material';
+import { MdCheckboxModule } from '@angular/material';
+import { MdTabsModule } from '@angular/material';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { StartComponent } from './pages/start/start.component';
@@ -38,6 +41,11 @@ import { SettingsComponent } from './pages/settings/settings.component';
    MdTabsModule,
    BrowserAnimationsModule
   ],
+  exports: [
+    MdButtonModule,
+    MdCheckboxModule,
+    MdTabsModule,
+ ],
   providers: [],
   bootstrap: [AppComponent]
 })
