@@ -2,9 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule} from '@angular/router';
 
-import { MdButtonModule } from '@angular/material';
-import { MdCheckboxModule } from '@angular/material';
-import { MdTabsModule } from '@angular/material';
+import { MatButtonModule } from '@angular/material';
+import { MatCheckboxModule } from '@angular/material';
+import { MatTabsModule } from '@angular/material';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -36,15 +36,15 @@ import { SettingsComponent } from './pages/settings/settings.component';
        component: SettingsComponent
      }
    ]),
-   MdButtonModule,
-   MdCheckboxModule,
-   MdTabsModule,
+   MatButtonModule,
+   MatCheckboxModule,
+   MatTabsModule,
    BrowserAnimationsModule
   ],
   exports: [
-    MdButtonModule,
-    MdCheckboxModule,
-    MdTabsModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatTabsModule,
  ],
   providers: [],
   bootstrap: [AppComponent]
