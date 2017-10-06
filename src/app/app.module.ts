@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule} from '@angular/router';
 
 import {MdButtonModule, MdCheckboxModule, MdTabsModule } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -18,6 +19,20 @@ import { SettingsComponent } from './pages/settings/settings.component';
   ],
   imports: [
    BrowserModule,
+   RouterModule.forRoot([
+     {
+       path: 'start',
+       component: StartComponent
+     },
+     {
+       path: 'about',
+       component: AboutComponent
+     },
+     {
+       path: 'settings',
+       component: SettingsComponent
+     }
+   ]),
    MdButtonModule,
    MdCheckboxModule,
    MdTabsModule,
