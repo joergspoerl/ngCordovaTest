@@ -1,15 +1,28 @@
 <md-tab-group>
-  <md-tab label="Tab 1">
-  Content 1 <br>
-<div class="button-row">
-  <button md-button (click)="clickButton()">Basic</button>
-  <button md-button color="primary">Primary</button>
-  <button md-button color="accent">Accent</button>
-  <button md-button color="warn">Warn</button>
-  <button md-button disabled>Disabled</button>
-  <a md-button routerLink=".">Link</a>
-</div>
+
+  <md-tab label="Start">
+    <app-start></app-start>
   </md-tab>
-  <md-tab label="Tab 2">Content 2</md-tab>
+  
+  <md-tab label="Settings">
+    <app-settings></app-settings>
+  </md-tab>
+  
+  <md-tab label="About">
+    <app-about></app-about>
+  </md-tab>
+
+  <md-tab label="Test">
+      Content 1 <br>
+    <div class="button-row">
+      <button md-button (click)="clickButton()">Basic</button>
+      <button md-button color="primary">Primary</button>
+      <button md-button color="accent">Accent</button>
+      <button md-button color="warn">Warn</button>
+      <button md-button disabled>Disabled</button>
+      <a md-button routerLink=".">Link</a>
+    </div>
+  </md-tab>
+  
 </md-tab-group>
 
