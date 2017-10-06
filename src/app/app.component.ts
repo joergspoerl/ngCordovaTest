@@ -1,5 +1,11 @@
 import { Component } from '@angular/core';
-import {MdButtonModule, MdCheckboxModule} from '@angular/material';
+
+import {MatToolbarModule} from '@angular/material';
+
+import { MatButtonModule } from '@angular/material';
+import { MatCheckboxModule } from '@angular/material';
+import { MatTabsModule } from '@angular/material';
+
 
 @Component({
   selector: 'app-root',
