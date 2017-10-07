@@ -1,21 +1,33 @@
-<mat-toolbar>
-  <span>
-    <button mat-button>Start</button>
-  </span>
+<div style="height: 100%" fxLayout="column">
 
-  <span>
-    <a mat-button routerLink="/start" color="accent">Start</a>
-  </span>
+  <div fxFlexFill fxLayout="column" style="background-color:rgb(33, 92, 55);">
+    <div>
+      <span>
+        <button mat-button>Start</button>
+      </span>
 
-  <span>
-    <a mat-button routerLink="/about">About</a>
-  </span>
+      <span>
+        <a mat-button routerLink="/start" color="accent">Start</a>
+      </span>
 
-  <span>
-    <a mat-button routerLink="/settings">Settings</a>
-  </span>
+      <span>
+        <a mat-button routerLink="/about">About</a>
+      </span>
 
-  <span class="example-spacer"></span>
-</mat-toolbar>
+      <span>
+        <a mat-button routerLink="/settings">Settings</a>
+      </span>
 
-<router-outlet></router-outlet>
+      <span class="example-spacer"></span>
+    </div>
+
+    <router-outlet></router-outlet>
+
+    <!-- Content is here !!! -->
+
+    <div>Footer</div>
+    
+  </div>
+
+
+</div>

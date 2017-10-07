@@ -1,6 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
 
+
 /* @import '~@angular/material/prebuilt-themes/deeppurple-amber.css'; */
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-/* /Users/jorgsporl/Documents/Projects/ngCordova/node_modules/@angular/material/prebuilt-themes/purple-green.css */
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.router-page {
+  flex: 1 1 auto;
+  display: flex;
+  overflow: auto;
+}
+
+;
+.bounds {
+    background-color: #ddd;
+    /* height :800px; */
+}
+
+.sec1 {
+    background: red;
+    color: white;
+    text-transform: uppercase
+}
+
+.sec2 {
+    background: yellow;
+    color: blue;
+}
+
+.sec3 {
+    background: blue;
+    color: white;
+    text-transform: uppercase
+}
+
+.sec1,
+.sec2,
+.sec3 {
+    padding-top: 20px;
+    text-align: center
+}
+
+.content {
+    min-width: 200px;
+    /*height: 400px;*/
+}
