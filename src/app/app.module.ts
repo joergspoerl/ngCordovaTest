@@ -19,6 +19,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { NavigationComponent } from './tiles/navigation/navigation.component';
 import { UserlistComponent } from './tiles/userlist/userlist.component';
+import { UserComponent } from './pages/user/user.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { UserlistComponent } from './tiles/userlist/userlist.component';
     AboutComponent,
     SettingsComponent,
     NavigationComponent,
-    UserlistComponent
+    UserlistComponent,
+    UserComponent
   ],
   imports: [
    BrowserModule,
@@ -37,6 +39,10 @@ import { UserlistComponent } from './tiles/userlist/userlist.component';
        component: StartComponent
      },
      {
+      path: 'user',
+      component: UserComponent
+    },
+    {
        path: 'about',
        component: AboutComponent
      },
