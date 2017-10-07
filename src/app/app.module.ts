@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule} from '@angular/router';
 
+import { MatToolbarModule } from '@angular/material';
 import { MatButtonModule } from '@angular/material';
 import { MatCheckboxModule } from '@angular/material';
 import { MatTabsModule } from '@angular/material';
@@ -38,16 +39,12 @@ import { SettingsComponent } from './pages/settings/settings.component';
      }
    ]),
    MatButtonModule,
+   MatToolbarModule,
    MatCheckboxModule,
    MatTabsModule,
    FlexLayoutModule,
    BrowserAnimationsModule
   ],
-  exports: [
-    MatButtonModule,
-    MatCheckboxModule,
-    MatTabsModule,
- ],
   providers: [],
   bootstrap: [AppComponent]
 })

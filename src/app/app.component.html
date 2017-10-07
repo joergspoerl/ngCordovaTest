@@ -1,19 +1,21 @@
-<md-toolbar>
-  <span>----</span>
-
+<mat-toolbar>
   <span>
-    <a md-button routerLink="/start" color="accent">Start</a>
+    <button mat-button>Start</button>
   </span>
 
   <span>
-    <a md-button routerLink="/about">About</a>
+    <a mat-button routerLink="/start" color="accent">Start</a>
   </span>
 
   <span>
-    <a md-button routerLink="/settings">Settings</a>
+    <a mat-button routerLink="/about">About</a>
   </span>
-  
+
+  <span>
+    <a mat-button routerLink="/settings">Settings</a>
+  </span>
+
   <span class="example-spacer"></span>
-</md-toolbar>
+</mat-toolbar>
 
 <router-outlet></router-outlet>
