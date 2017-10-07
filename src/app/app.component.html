@@ -1,33 +1,47 @@
 <div style="height: 100%" fxLayout="column">
 
-  <div fxFlexFill fxLayout="column" style="background-color:rgb(33, 92, 55);">
-    <div>
-      <span>
-        <button mat-button>Start</button>
-      </span>
+  <mat-sidenav-container class="example-container" style="height: 100%">
+    <mat-sidenav #sidenav class="example-sidenav">
+      <app-navigation></app-navigation>
+    </mat-sidenav>
 
-      <span>
-        <a mat-button routerLink="/start" color="accent">Start</a>
-      </span>
+    <div class="example-sidenav-content"  fxLayout="column" style="height:100%" >
 
-      <span>
-        <a mat-button routerLink="/about">About</a>
-      </span>
-
-      <span>
-        <a mat-button routerLink="/settings">Settings</a>
-      </span>
-
-      <span class="example-spacer"></span>
+        <div fxFlexFill fxLayout="column" >
+            <div>
+                <button type="button" mat-button (click)="sidenav.open()">
+                    <!-- <i class="fa fa-bars" aria-hidden="true"></i> -->
+                    Menu
+                </button>
+            
+              <span>
+                <a mat-button routerLink="/start" color="accent">Start</a>
+              </span>
+        
+              <span>
+                <a mat-button routerLink="/about">About</a>
+              </span>
+        
+              <span>
+                <a mat-button routerLink="/settings">Settings</a>
+              </span>
+        
+              <span class="example-spacer"></span>
+            </div>
+        
+            <router-outlet></router-outlet>
+        
+            <!-- Content is here !!! -->
+        
+            <div>Footer</div>
+        
+          </div>
+        
     </div>
 
-    <router-outlet></router-outlet>
+  </mat-sidenav-container>
 
-    <!-- Content is here !!! -->
 
-    <div>Footer</div>
-    
-  </div>
 
 
 </div>

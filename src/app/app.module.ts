@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule} from '@angular/router';
 
 import { MatToolbarModule } from '@angular/material';
+import { MatSidenavModule } from '@angular/material';
+import { MatListModule } from '@angular/material';
+
 import { MatButtonModule } from '@angular/material';
 import { MatCheckboxModule } from '@angular/material';
 import { MatTabsModule } from '@angular/material';
@@ -14,13 +17,15 @@ import { AppComponent } from './app.component';
 import { StartComponent } from './pages/start/start.component';
 import { AboutComponent } from './pages/about/about.component';
 import { SettingsComponent } from './pages/settings/settings.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StartComponent,
     AboutComponent,
-    SettingsComponent
+    SettingsComponent,
+    NavigationComponent
   ],
   imports: [
    BrowserModule,
@@ -38,8 +43,10 @@ import { SettingsComponent } from './pages/settings/settings.component';
        component: SettingsComponent
      }
    ]),
-   MatButtonModule,
+   MatSidenavModule,
+   MatListModule,
    MatToolbarModule,
+   MatButtonModule,
    MatCheckboxModule,
    MatTabsModule,
    FlexLayoutModule,
