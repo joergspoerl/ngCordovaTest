@@ -17,7 +17,8 @@ import { AppComponent } from './app.component';
 import { StartComponent } from './pages/start/start.component';
 import { AboutComponent } from './pages/about/about.component';
 import { SettingsComponent } from './pages/settings/settings.component';
-import { NavigationComponent } from './navigation/navigation.component';
+import { NavigationComponent } from './tiles/navigation/navigation.component';
+import { UserlistComponent } from './tiles/userlist/userlist.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     StartComponent,
     AboutComponent,
     SettingsComponent,
-    NavigationComponent
+    NavigationComponent,
+    UserlistComponent
   ],
   imports: [
    BrowserModule,
