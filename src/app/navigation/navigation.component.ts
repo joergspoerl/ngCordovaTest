@@ -11,11 +11,11 @@ export class NavigationComponent implements OnInit {
 constructor() { }
 
 links = [
-  { name: 'Dashboard', url: ''},
-  { name: 'Information', url: ''},
-  { name: 'Help', url: ''},
-  { name: 'More', url: ''},
-  { name: 'Settings', url: ''},
+  { name: 'Dashboard', url: '/start'},
+  { name: 'Information', url: '/about'},
+  { name: 'Help', url: '/about'},
+  { name: 'Home', url: ''},
+  { name: 'Settings', url: '/settings'},
 ];
 
   ngOnInit() {
